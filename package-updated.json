@@ -1,0 +1,73 @@
+{
+  "name": "augmentedمنصة-مختبرات-الإبداع-(dgac)",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit",
+    "analyze": "vite-bundle-visualizer"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.12.0",
+    "@heroicons/react": "^2.2.0",
+    "@google/genai": "^1.37.0",
+    "@supabase/supabase-js": "^2.48.1",
+    "leaflet": "1.9.4",
+    "react-leaflet": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/leaflet": "^1.9.8",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    
+    "@comment": "=== Testing Dependencies ===",
+    "vitest": "^1.2.0",
+    "@vitest/ui": "^1.2.0",
+    "@vitest/coverage-v8": "^1.2.0",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/user-event": "^14.5.2",
+    "jsdom": "^24.0.0",
+    
+    "@comment": "=== E2E Testing ===",
+    "@playwright/test": "^1.41.0",
+    
+    "@comment": "=== Code Quality ===",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    
+    "@comment": "=== Performance Tools ===",
+    "vite-bundle-visualizer": "^1.0.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pwa": "^0.17.5",
+    
+    "@comment": "=== CSS ===",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
